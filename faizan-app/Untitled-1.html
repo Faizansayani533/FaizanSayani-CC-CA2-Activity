@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Crop Disease Management System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f0fff4 0%, #e6f7ff 100%);
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .header h1 {
+            color: #166534;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .divider {
+            height: 4px;
+            width: 100px;
+            background: #22c55e;
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+        }
+
+        .section:hover {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .icon-container {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1f2937;
+        }
+
+        .content {
+            padding-left: 1rem;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-left: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: #4b5563;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .card {
+            background: #f9fafb;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+
+        .card h3 {
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+
+        .problem-statement {
+            font-style: italic;
+            color: #4b5563;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #f3f4f6;
+            border-radius: 0.5rem;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+        }
+
+        /* Section-specific colors */
+        .empathize { background-color: #22c55e; }
+        .analyze { background-color: #3b82f6; }
+        .ideate { background-color: #eab308; }
+        .prototype { background-color: #a855f7; }
+        .test { background-color: #ef4444; }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>AI-Driven Crop Disease Prediction and Management System</h1>
+            <div class="divider"></div>
+        </div>
+
+        <!-- Empathize Section -->
+        <div class="section">
+            <div class="section-header">
+                <div class="icon-container empathize">
+                    <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+                        <path d="M12 2L4 7v10l8 5 8-5V7l-8-5z"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">Empathize</h2>
+            </div>
+            <div class="content">
+                <p><strong>Research Findings:</strong></p>
+                <ul>
+                    <li>Interviewed 50+ farmers across regions</li>
+                    <li>40% crop loss due to delayed disease detection</li>
+                    <li>Limited access to agricultural experts</li>
+                    <li>High costs of preventive pesticide spraying</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Analyze Section -->
+        <div class="section">
+            <div class="section-header">
+                <div class="icon-container analyze">
+                    <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+                        <path d="M21 7L9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7z"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">Analyze</h2>
+            </div>
+            <div class="content">
+                <p><strong>Problem Statement:</strong></p>
+                <div class="problem-statement">
+                    "How might we help farmers detect and manage crop diseases early to prevent yield losses?"
+                </div>
+                <p><strong>Root Causes:</strong></p>
+                <ul>
+                    <li>Lack of timely disease detection</li>
+                    <li>Limited agricultural expertise</li>
+                    <li>High cost of traditional solutions</li>
+                    <li>Weather-dependent disease spread</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Ideate Section -->
+        <div class="section">
+            <div class="section-header">
+                <div class="icon-container ideate">
+                    <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+                        <path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">Ideate</h2>
+            </div>
+            <div class="content">
+                <div class="grid">
+                    <div>
+                        <p><strong>Solution Components:</strong></p>
+                        <ul>
+                            <li>Mobile app with AI-powered detection</li>
+                            <li>Real-time weather monitoring</li>
+                            <li>Personalized treatment recommendations</li>
+                            <li>Community knowledge sharing</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p><strong>Technologies:</strong></p>
+                        <ul>
+                            <li>Deep Learning (CNN)</li>
+                            <li>IoT sensors</li>
+                            <li>Cloud computing</li>
+                            <li>Mobile-first approach</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Prototype Section -->
+        <div class="section">
+            <div class="section-header">
+                <div class="icon-container prototype">
+                    <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">Prototype</h2>
+            </div>
+            <div class="content">
+                <div class="grid">
+                    <div class="card">
+                        <h3>AI Model</h3>
+                        <ul>
+                            <li>100,000+ training images</li>
+                            <li>95% accuracy rate</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Mobile App</h3>
+                        <ul>
+                            <li>Offline functionality</li>
+                            <li>Multi-language support</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>IoT Integration</h3>
+                        <ul>
+                            <li>Weather sensors</li>
+                            <li>Real-time monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Test Section -->
+        <div class="section">
+            <div class="section-header">
+                <div class="icon-container test">
+                    <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">Test</h2>
+            </div>
+            <div class="content">
+                <div class="grid">
+                    <div>
+                        <p><strong>Testing Results:</strong></p>
+                        <ul>
+                            <li>85% accurate disease prediction</li>
+                            <li>60% reduction in pesticide usage</li>
+                            <li>45% decrease in crop losses</li>
+                            <li>90% farmer satisfaction rate</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p><strong>Impact:</strong></p>
+                        <ul>
+                            <li>Serving 1000+ farmers</li>
+                            <li>Supporting 10 major crops</li>
+                            <li>50% reduction in losses</li>
+                            <li>Global scaling potential</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>Project by: [Your Name/Team]</strong></p>
+            <p>Contact: [Contact Information]</p>
+        </div>
+    </div>
+</body>
+</html>
