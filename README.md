@@ -64,8 +64,6 @@ npm start
 Access the Application
 
 Open your browser and navigate to:
-arduino
-Copy code
 http://localhost:3000
 Deployment
 Back-End:
