@@ -19,7 +19,7 @@ useEffect(() => {
   async function  Load()
   {
      const result = await axios.get(
-         "https://ccbackend-1.onrender.com/api/v1/student/getall");
+         "https://ccbackend-vt09.onrender.com/api/v1/student/getall");
          setUsers(result.data);
          console.log(result.data);
   }
@@ -31,7 +31,7 @@ useEffect(() => {
         event.preventDefault();
     try
         {
-         await axios.post("https://ccbackend-1.onrender.com/api/v1/student/save",
+         await axios.post("https://ccbackend-vt09.onrender.com/api/v1/student/save",
         {
         studentname: studentname,
         status: status,
@@ -61,7 +61,7 @@ useEffect(() => {
  
    async function DeleteStudent(studentid)
    {
-        await axios.delete("https://ccbackend-1.onrender.com/api/v1/student/delete/" + studentid); 
+        await axios.delete("https://ccbackend-vt09.onrender.com/api/v1/student/delete/" + studentid); 
         alert("Student deleted Successfully");
         Load();
    }
@@ -72,7 +72,7 @@ useEffect(() => {
  
    try
        {
-        await axios.put("https://ccbackend-1.onrender.com/api/v1/student/edit/" + studentid ,
+        await axios.put("https://ccbackend-vt09.onrender.com/api/v1/student/edit/" + studentid ,
        {
 
         studentname: studentname,
@@ -97,8 +97,8 @@ useEffect(() => {
 
   return (
     <div>
-      <h2>Khushi Sahu CA2 PROJECT</h2>
-      <h3>PRN No. 2146491245085</h3>
+      <h2>FAIZAN SAYANI CA2 PROJECT</h2>
+      <h3>PRN No. 2146491245005</h3>
       
        <h1>Student Details</h1>
        <div class="container mt-4" >
