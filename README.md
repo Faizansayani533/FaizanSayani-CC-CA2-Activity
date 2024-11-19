@@ -75,7 +75,8 @@ Update the API endpoints in the React app (faizan-app/src) to point to the Rende
 Front-End:
 
 Deploy faizan-app to Netlify or any other hosting platform.
-Technologies Used
+
+Technologies Used :
 Front-End: React.js
 Back-End: Spring Boot (Java)
 Database: MongoDB Atlas
